@@ -1,0 +1,74 @@
+body {
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+body .overflow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #013a41;
+  z-index: -1;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 500px;
+  height: 600px;
+  border-radius: 15px;
+  background: #ffffff40;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border: 1px solid #ffffff2e;
+}
+
+main .max-width h1 {
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+main .max-width input, main .max-width textarea {
+  display: block;
+  width: 100%;
+  padding: 20px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+}
+
+main .max-width input[type="submit"] {
+  background-color: #0393a6;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 10px;
+}
+
+main .max-width textarea {
+  resize: vertical;
+  height: 190px;
+}
+
+.errors {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px;
+  top: 10px;
+  left: 10px;
+}
+
+.errors .close {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
