@@ -2,15 +2,11 @@
   $to = "kareemmoh1911@gmail.com";
   $subject = "This is subject";
   
-  $message = "<b>This is HTML message.</b>";
-  $message .= "<h1>This is headline.</h1>";
+  $message = "message";
   
-  $header = "From:abc@somedomain.com \r\n";
-  $header .= "Cc:afgh@somedomain.com \r\n";
-  $header .= "MIME-Version: 1.0\r\n";
-  $header .= "Content-type: text/html\r\n";
+  $header = "Hello";
   
-  $retval = mail ($to,$subject,$message,$header);
+  $retval = mail($to,$subject,$message,$header);
   
   if( $retval == true ) {
     echo "Message sent successfully...";
