@@ -1,4 +1,24 @@
 <?php
+  $to = "kareemmoh1911@gmail.com";
+  $subject = "This is subject";
+  
+  $message = "<b>This is HTML message.</b>";
+  $message .= "<h1>This is headline.</h1>";
+  
+  $header = "From:abc@somedomain.com \r\n";
+  $header .= "Cc:afgh@somedomain.com \r\n";
+  $header .= "MIME-Version: 1.0\r\n";
+  $header .= "Content-type: text/html\r\n";
+  
+  $retval = mail ($to,$subject,$message,$header);
+  
+  if( $retval == true ) {
+    echo "Message sent successfully...";
+  }else {
+    echo "Message could not be sent...";
+  }
+?>
+<?php
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
     $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
@@ -29,7 +49,6 @@
       $message = "";
     }
   }
-  mail("kareemmoh1911@gmail.com", "Test", "Hello Kareem", "this message from me for only test");
 ?>
 <!DOCTYPE html>
 <html lang="en">
